@@ -24,7 +24,6 @@
 
 let str = 'Mark';
 function reverse(str) {
-  
   return Array.from(str).reduce((rev, char) => char + rev, '');
   }
 
