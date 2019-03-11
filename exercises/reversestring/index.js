@@ -6,7 +6,7 @@
 //   reverse('hello') === 'olleh'
 //   reverse('Greetings!') === '!sgniteerG'
 
-let str = "Andrew";
+// let str = "Andrew";
 
 // function reverse(str) {
 //   return str
@@ -24,13 +24,13 @@ let str = "Andrew";
 //   return rev;
 // }
 
-function reverse(str) {
-  let rev = "";
-  for (let item of str) {
-    rev = item + rev;
-  }
-  return rev;
-}
+// function reverse(str) {
+//   let rev = "";
+//   for (let item of str) {
+//     rev = item + rev;
+//   }
+//   return rev;
+// }
 
 // function reverse(str) {
 //   let rev = " ";
@@ -40,10 +40,10 @@ function reverse(str) {
 //   return rev;
 // }
 
-// let str = "Mark";
-// function reverse(str) {
-//   return Array.from(str).reduce((rev, char) => char + rev, "");
-// }
+let str = "Mark";
+function reverse(str) {
+  return Array.from(str).reduce((rev, char) => char + rev, "");
+}
 
 console.log(reverse(str));
 
