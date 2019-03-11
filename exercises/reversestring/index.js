@@ -6,24 +6,44 @@
 //   reverse('hello') === 'olleh'
 //   reverse('Greetings!') === '!sgniteerG'
 
-// let str = 'Andrew';
+let str = "Andrew";
+
 // function reverse(str) {
-//   return str.split('').reverse().join();
+//   return str
+//     .split("")
+//     .reverse()
+//     .join("");
 // }
 // console.log(reverse(str));
 
 // function reverse(str) {
-//   let rev = '';
-//   for (const item of str) {
-//       rev = item + rev;
-//     }
-//     return rev;
+//   let rev = "";
+//   for (let i in str) {
+//     rev = str[i] + rev;
 //   }
+//   return rev;
+// }
 
-// let str = 'Mark';
+function reverse(str) {
+  let rev = "";
+  for (let item of str) {
+    rev = item + rev;
+  }
+  return rev;
+}
+
 // function reverse(str) {
-//   return Array.from(str).reduce((rev, char) => char + rev, '');
+//   let rev = " ";
+//   for (const item of str) {
+//     rev = item + rev;
 //   }
+//   return rev;
+// }
+
+// let str = "Mark";
+// function reverse(str) {
+//   return Array.from(str).reduce((rev, char) => char + rev, "");
+// }
 
 console.log(reverse(str));
 
