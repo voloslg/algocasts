@@ -20,14 +20,11 @@
 //     return rev;
 //   }
 
-
-
-let str = 'Mark';
-function reverse(str) {
-  return Array.from(str).reduce((rev, char) => char + rev, '');
-  }
+// let str = 'Mark';
+// function reverse(str) {
+//   return Array.from(str).reduce((rev, char) => char + rev, '');
+//   }
 
 console.log(reverse(str));
-
 
 module.exports = reverse;
